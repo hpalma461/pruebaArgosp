@@ -247,7 +247,7 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Indicadores FC',
+            'text'        => 'Dashboard',
             'route'         => 'admin.home',            
             'icon'        => 'fa fa-tachometer-alt fa-fw',            
             'can' => 'admin.home'
@@ -258,133 +258,7 @@ return [
             'icon'        => 'fas fa-chalkboard-teacher',            
             //'can' => 'admin.home'
         ],
-        
-   		
-    	[
-     		'text'     => 'Mesas Seccion Primera' ,
-     		'icon'     => 'fas fa-sitemap' ,
-     		'submenu' => [
-            	
-            		[
-     		'text'     => 'Personal' ,
-     		'icon'     => 'fas fa-user-friends' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'Cambios de Adscripcion' ,
-                	'icon'     => 'fas fa-people-arrows' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'Cambios de Bloque' ,
-             		'url'   => '#' ,
-        		],
-    		],
-		],
-    	[
-     		'text'     => 'Faltas e Incapacidades' ,
-     		'icon'     => 'fas fa-user-injured' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'Faltas' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'Incapacidades' ,
-                'icon'     => 'fas fa-user-injured' ,
-             		'url'   => '#' ,
-        		],
-           		 [
-           		 	'text' => 'COVID - 19' ,
-                 'icon'     => 'fas fa-viruses' ,
-            		 'url'   => '#' ,
-        		],
-    		],
-		],
-    	[
-     		'text'     => 'Moral' ,
-     		'icon'     => 'fas fa-umbrella-beach' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'Vacaciones' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'Licencias' ,
-             		'url'   => '#' ,
-        		],
-    		],
-		],
-    	[
-     		'text'     => 'CISEC' ,
-     		'icon'     => 'fas fa-file-alt' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'Vacaciones' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'Licencias' ,
-             		'url'   => '#' ,
-        		],
-    		],
-		],
-    	[
-     		'text'     => 'Registro' ,
-     		'icon'     => 'fas fa-book-reader' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'CUP' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'CUIP' ,
-             		'url'   => '#' ,
-        		],
-    		],
-		],
-    	[
-     		'text'     => 'L. O. C.' ,
-     		'icon'     => 'far fa-address-card' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'Portes de arma' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'Vehiculos' ,
-             		'url'   => '#' ,
-        		],
-    		],
-		],
-    
-    	[
-     		'text'     => 'Adiestramiento' ,
-     		'icon'     => 'fas fa-user-graduate' ,
-     		'submenu' => [
-        		[
-           		 	'text' => 'Cursos' ,
-            		 'url'   => '#' ,
-        		],
-        		[
-            		'text' => 'Meritos Policiales' ,
-             		'url'   => '#' ,
-        		],
-    		],
-		],
-
-            
-            
-            ]
-                    
-         ],   
-    	
-    
-    
-        ['header' => 'ADMINISTRADOR',
-        'can' => 'admin.users.index'
-        ],
-    
-    	[
+        [
             'text'        => 'Usuarios',
             'route'         => 'admin.users.index',
             'icon'        => 'fas fa-users fa-fw',
@@ -397,44 +271,25 @@ return [
             'icon'        => 'fas fa-users-cog fa-fw',
             //'can' => 'admin.users.index'
         ],
-        [
-            'text'     => 'Catalogos' ,
-            'icon'     => 'fas fa-file-invoice' ,
-            'submenu' => [
-                [
-                    'text' => 'Adscripciones 1',
-                    'route'  => 'cat1adscripciones.index',
-                    'icon' => 'fab fa-fw fa-buffer',
-                    //'active' => ['admin/adscripciones1*'],
-                    //'can' => 'admin.categories.index'
-                ],
-                [
-                    'text' => 'Adscripciones 2',
-                    'url'   => '#' ,
-                    //'route'  => 'admin.categories.index',
-                    'icon' => 'fab fa-fw fa-buffer',
-                    'active' => ['admin/adscripciones2*'],
-                    //'can' => 'admin.categories.index'
-                ],
-
-                [
-                    'text' => 'Categorias',
-                    'route'  => 'admin.categories.index',
-                    'icon' => 'fab fa-fw fa-buffer',
-                    'active' => ['admin/categories*'],
-                    'can' => 'admin.categories.index'
-                ],
-                [
-                    'text' => 'Etiquetas',
-                    'route'  => 'admin.tags.index',
-                    'icon' => 'far fa-fw fa-bookmark',
-                    'active' => ['admin/tags*'],
-                    'can' => 'admin.tags.index'
-                ],
-           ],
-       ],
+        ['header' => 'ADMINISTRADOR',
+        'can' => 'admin.users.index'
+        ],
         
-                
+        [
+            'text' => 'Categorias',
+            'route'  => 'admin.categories.index',
+            'icon' => 'fab fa-fw fa-buffer',
+            'active' => ['admin/categories*'],
+            'can' => 'admin.categories.index'
+        ],
+        [
+            'text' => 'Etiquetas',
+            'route'  => 'admin.tags.index',
+            'icon' => 'far fa-fw fa-bookmark',
+            'active' => ['admin/tags*'],
+            'can' => 'admin.tags.index'
+        ],
+        
         ['header' => 'OPCION DE PUBLICACIONES'],
         [
             'text'       => 'Lista de Publicaciones',

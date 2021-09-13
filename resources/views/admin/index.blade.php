@@ -54,6 +54,16 @@
         Relacion de Personal <i class="fas fa-arrow-circle-right"></i>
       </a>
     </div>
+  </div> 
+  <div>
+    <div class="info-box bg-warning">      
+      <span class="info-box-icon"><i class="far fa-flag"></i></span>
+      <div class="info-box-content">
+        <span class="info-box-text">Servicio</span>
+        <span class="info-box-number">410</span>
+      </div>
+    </div>  
+  </div> 
   </div>
 </div>
   

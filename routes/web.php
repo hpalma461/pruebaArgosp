@@ -12,6 +12,7 @@ Route::get('category/{category}', [PostController::class,'category'])->name('pos
 
 Route::get('tag/{tag}',[PostController::class,'tag'])->name('posts.tag');
 
+Route::view('cat1adscripciones', 'livewire.cat1adscripciones.index')->middleware('can:admin.home')->name('cat1adscripciones.index');
 
 
 
