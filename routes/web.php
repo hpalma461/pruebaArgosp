@@ -14,7 +14,9 @@ Route::get('tag/{tag}',[PostController::class,'tag'])->name('posts.tag');
 
 Route::view('cat1adscripciones', 'livewire.cat1adscripciones.index')->middleware('can:admin.home')->name('cat1adscripciones.index');
 
+Route::view('cat2adscripciones', 'livewire.cat2adscripciones.index')->middleware('can:admin.home')->name('cat2adscripciones.index');
 
+Route::view('grados', 'livewire.grados.index')->middleware('can:admin.home')->name('grados.index');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

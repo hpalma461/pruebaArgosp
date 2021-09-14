@@ -10,7 +10,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            @livewire('cat1adscripciones')
+            @livewire('grados')
         </div>     
     </div>   
 </div>
@@ -23,3 +23,5 @@
 @section('js')
     <script> console.log('Hi!'); </script>
 @stop
+
+

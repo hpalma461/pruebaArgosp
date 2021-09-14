@@ -410,12 +410,20 @@ return [
                 ],
                 [
                     'text' => 'Adscripciones 2',
-                    'url'   => '#' ,
-                    //'route'  => 'admin.categories.index',
+                    'route'  => 'cat2adscripciones.index',
                     'icon' => 'fab fa-fw fa-buffer',
                     'active' => ['admin/adscripciones2*'],
                     //'can' => 'admin.categories.index'
                 ],
+
+                [
+                    'text' => 'Grados',
+                    'route'  => 'grados.index',
+                    'icon' => 'fab fa-fw fa-buffer',
+                    'active' => ['admin/grados*'],
+                    //'can' => 'admin.categories.index'
+                ],
+
 
                 [
                     'text' => 'Categorias',

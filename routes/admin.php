@@ -13,7 +13,7 @@ use App\Http\Livewire\Cat1adscripciones;
 //para proteger la ruta segun el rol que tengamos se realiza con el middleware llamado can
 Route::get('', [homeController::class, 'index'])->middleware('can:admin.home')->name('admin.home');
 
-Route::view('cat1adscripciones', 'livewire.cat1adscripciones.index')->middleware('can:admin.home');
+//Route::view('cat1adscripciones', 'livewire.cat1adscripciones.index')->middleware('can:admin.home');
 
 //crear un grupo de rutas de tipo resource para el crud de usuarios, se le pasa el metodo only para que solo cree la ruta
 //index, edit y update
