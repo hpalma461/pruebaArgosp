@@ -38,7 +38,7 @@ class Grados extends Component
     public function store()
     {
         $this->validate([
-		'grado' => 'required',
+		'grado' => 'required|unique:grados',
         ]);
 
         Grado::create([ 
@@ -63,7 +63,7 @@ class Grados extends Component
     public function update()
     {
         $this->validate([
-		'grado' => 'required',
+		'grado' => 'required|unique:grados',
         ]);
 
         if ($this->selected_id) {

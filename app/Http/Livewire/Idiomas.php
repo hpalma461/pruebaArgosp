@@ -4,26 +4,27 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Livewire\WithPagination;
-use App\Models\Cat1adscripcione;
+use App\Models\Idioma;
 
-class Cat1adscripciones extends Component
+class Idiomas extends Component
 {
     use WithPagination;
 
 	protected $paginationTheme = 'bootstrap';
-    public $selected_id, $keyWord, $adscripcion;
+    public $selected_id, $keyWord, $idioma;
     public $updateMode = false;
 
     public function render()
     {
 		$keyWord = '%'.$this->keyWord .'%';
-        return view('livewire.cat1adscripciones.view', [
-            'cat1adscripciones' => Cat1adscripcione::latest()
-						->orWhere('adscripcion', 'LIKE', $keyWord)
+        return view('livewire.catalogos.idiomas.view', [
+            'idiomas' => Idioma::latest()
+						->orWhere('idioma', 'LIKE', $keyWord)
 						->paginate(10),
         ]);
     }
 	
+
     public function cancel()
     {
         $this->resetInput();
@@ -32,30 +33,30 @@ class Cat1adscripciones extends Component
 	
     private function resetInput()
     {		
-		$this->adscripcion = null;
+		$this->idioma = null;
     }
 
     public function store()
     {
         $this->validate([
-		'adscripcion' => 'required|unique:cat1adscripciones',
+		'idioma' => 'required|unique:idiomas',
         ]);
 
-        Cat1adscripcione::create([ 
-			'adscripcion' => $this-> adscripcion
+        Idioma::create([ 
+			'idioma' => $this-> idioma
         ]);
         
         $this->resetInput();
 		$this->emit('closeModal');
-		session()->flash('message', 'Adscripción creada con éxito.');
+		session()->flash('message', 'Idioma creado con exitó.');
     }
 
     public function edit($id)
     {
-        $record = Cat1adscripcione::findOrFail($id);
+        $record = Idioma::findOrFail($id);
 
         $this->selected_id = $id; 
-		$this->adscripcion = $record-> adscripcion;
+		$this->idioma = $record-> idioma;
 		
         $this->updateMode = true;
     }
@@ -63,26 +64,28 @@ class Cat1adscripciones extends Component
     public function update()
     {
         $this->validate([
-		'adscripcion' => 'required',
+		'idioma' => 'required|unique:idiomas',
         ]);
 
         if ($this->selected_id) {
-			$record = Cat1adscripcione::find($this->selected_id);
+			$record = Idioma::find($this->selected_id);
             $record->update([ 
-			'adscripcion' => $this-> adscripcion
+			'idioma' => $this-> idioma
             ]);
 
             $this->resetInput();
             $this->updateMode = false;
-			session()->flash('message', 'Adscripción actualizada con éxito.');
+			session()->flash('message', 'Idioma actualizado con éxito.');
         }
     }
 
     public function destroy($id)
     {
         if ($id) {
-            $record = Cat1adscripcione::where('id', $id);
+            $record = Idioma::where('id', $id);
             $record->delete();
+            
+			session()->flash('message', 'Idioma eliminado con éxito.');
         }
     }
 }

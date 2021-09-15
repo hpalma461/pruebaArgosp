@@ -404,14 +404,14 @@ return [
                 [
                     'text' => 'Adscripciones 1',
                     'route'  => 'cat1adscripciones.index',
-                    'icon' => 'fab fa-fw fa-buffer',
+                    'icon' => 'fas fa-vector-square',
                     //'active' => ['admin/adscripciones1*'],
                     //'can' => 'admin.categories.index'
                 ],
                 [
                     'text' => 'Adscripciones 2',
                     'route'  => 'cat2adscripciones.index',
-                    'icon' => 'fab fa-fw fa-buffer',
+                    'icon' => 'fas fa-vector-square',
                     'active' => ['admin/adscripciones2*'],
                     //'can' => 'admin.categories.index'
                 ],
@@ -419,7 +419,15 @@ return [
                 [
                     'text' => 'Grados',
                     'route'  => 'grados.index',
-                    'icon' => 'fab fa-fw fa-buffer',
+                    'icon' => 'fas fa-angle-double-right',
+                    'active' => ['admin/grados*'],
+                    //'can' => 'admin.categories.index'
+                ],
+
+                [
+                    'text' => 'Idiomas',
+                    'route'  => 'idiomas.index',
+                    'icon' => 'fas fa-language', 
                     'active' => ['admin/grados*'],
                     //'can' => 'admin.categories.index'
                 ],

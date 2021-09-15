@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Grados extends Migration
+class CreateGradosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,7 +15,7 @@ class Grados extends Migration
     {
         Schema::create('grados', function (Blueprint $table) {
             $table->id();
-            $table->string('grado');
+            $table->string('grado')->unique();
             $table->timestamps();
         });
     }

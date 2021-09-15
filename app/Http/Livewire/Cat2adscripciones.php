@@ -38,7 +38,7 @@ class Cat2adscripciones extends Component
     public function store()
     {
         $this->validate([
-		'adscripcion' => 'required',
+		'adscripcion' => 'required|unique:cat2adscripciones',
         ]);
 
         Cat2adscripcione::create([ 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Cat2adscripciones extends Migration
+class CreateCat1AdscripcionesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class Cat2adscripciones extends Migration
      */
     public function up()
     {
-        Schema::create('cat2adscripciones', function (Blueprint $table) {
+        Schema::create('cat1adscripciones', function (Blueprint $table) {
             $table->id();
-            $table->string('adscripcion');            
+            $table->string('adscripcion')->unique();
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class Cat2adscripciones extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cat2adscripciones');
+        Schema::dropIfExists('cat1adscripciones');
     }
 }
