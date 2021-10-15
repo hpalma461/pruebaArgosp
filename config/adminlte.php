@@ -432,6 +432,13 @@ return [
                     //'can' => 'admin.categories.index'
                 ],
 
+                [
+                    'text' => 'Bloques',
+                    'route'  => 'bloques.index',
+                    'icon' => 'fas fa-hourglass-half', 
+                    'active' => ['admin/grados*'],
+                    //'can' => 'admin.categories.index'
+                ],
 
                 [
                     'text' => 'Categorias',

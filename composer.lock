@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a93c0544c00fb0e421f891e703740cde",
+    "content-hash": "a7d271a46072e50d040aeafbabc470f7",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -645,6 +645,65 @@
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
+            "name": "flightsadmin/livewire-crud",
+            "version": "0.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flightsadmin/livewire-crud.git",
+                "reference": "ab3c84f89fe74845395bf538e63b9b8bd760a83e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flightsadmin/livewire-crud/zipball/ab3c84f89fe74845395bf538e63b9b8bd760a83e",
+                "reference": "ab3c84f89fe74845395bf538e63b9b8bd760a83e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^6.0|^7.0|^8.0",
+                "laravel/ui": "^2|^3",
+                "livewire/livewire": "^2",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Flightsadmin\\LivewireCrud\\LivewireCrudServiceProvider"
+                    ],
+                    "aliases": {
+                        "LivewireCrud": "Flightsadmin\\LivewireCrud\\LivewireCrudFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Flightsadmin\\LivewireCrud\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "George Chitechi",
+                    "email": "george@flightsadmin.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Scaffold Livewire Components, migrations, factory and crud in one command based on database tables",
+            "homepage": "https://github.com/flightsadmin/livewire-crud",
+            "keywords": [
+                "flightsadmin",
+                "livewire-crud"
+            ],
+            "support": {
+                "issues": "https://github.com/flightsadmin/livewire-crud/issues",
+                "source": "https://github.com/flightsadmin/livewire-crud/tree/0.0.14"
+            },
+            "time": "2021-01-08T20:30:03+00:00"
+        },
+        {
             "name": "fruitcake/laravel-cors",
             "version": "v2.0.4",
             "source": {
@@ -1220,6 +1279,51 @@
             "time": "2021-08-20T13:26:30+00:00"
         },
         {
+            "name": "laravel-lang/lang",
+            "version": "7.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Lang/lang.git",
+                "reference": "679a65755db37b35acd36a5e0ca51e055815a00a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/679a65755db37b35acd36a5e0ca51e055815a00a",
+                "reference": "679a65755db37b35acd36a5e0ca51e055815a00a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "suggest": {
+                "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laravel-Lang Team"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "support": {
+                "issues": "https://github.com/Laravel-Lang/lang/issues",
+                "source": "https://github.com/Laravel-Lang/lang/tree/7.0.9"
+            },
+            "time": "2020-11-30T20:35:41+00:00"
+        },
+        {
             "name": "laravel/fortify",
             "version": "v1.8.0",
             "source": {
@@ -1647,6 +1751,64 @@
                 "source": "https://github.com/laravel/tinker/tree/v2.6.1"
             },
             "time": "2021-03-02T16:53:12+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/07d725813350c695c779382cbd6dac0ab8665537",
+                "reference": "07d725813350c695c779382cbd6dac0ab8665537",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^8.42",
+                "illuminate/filesystem": "^8.42",
+                "illuminate/support": "^8.42",
+                "illuminate/validation": "^8.42",
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v3.3.0"
+            },
+            "time": "2021-05-25T16:45:33+00:00"
         },
         {
             "name": "laravelcollective/html",

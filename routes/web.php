@@ -19,6 +19,8 @@ Route::view('cat2adscripciones', 'livewire.cat2adscripciones.index')->middleware
 
 Route::view('grados', 'livewire.grados.index')->middleware('can:admin.home')->name('grados.index');
 
+Route::view('bloques', 'livewire.bloques.index')->middleware('can:admin.home')->name('bloques.index');
+
 Route::view('catalogos.idiomas', 'livewire.catalogos.idiomas.index')->middleware('can:admin.home')->name('idiomas.index');
 
 //Route::resource('catalogos.idiomas', Idiomas::class)->names('catalogos.idiomas');

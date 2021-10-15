@@ -20,7 +20,7 @@ Route::get('', [homeController::class, 'index'])->middleware('can:admin.home')->
 //para proteger las rutas creadas con Route::resource se tiene que hacer en el controlador
 Route::resource('users', Usercontroller::class)->only(['index', 'edit', 'update'])->names('admin.users');
 
-Route::resource('roles', RoleController::class)->names('admin.roles');
+Route::resource('roles', RoleController::class)->middleware('can:admin.home')->names('admin.roles');
 
 //generar la ruto resource para el crud de categorias
 //se le agrega el metodo except para indicarle que ruta no quiero que me genere
