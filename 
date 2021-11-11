@@ -1,0 +1,35 @@
+[33mcommit fd7572716b9acf845182413a0da1887d5d6729ff[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mrama-pruebaBecarios[m[33m)[m
+Author: hpalma461 <63756085+hpalma461@users.noreply.github.com>
+Date:   Fri Oct 22 16:58:16 2021 -0500
+
+    Actualizacion estable
+
+[33mcommit df9f0410f801f0335f8764d2af3da5fe7e8ce8cc[m
+Author: hpalma461 <63756085+hpalma461@users.noreply.github.com>
+Date:   Fri Oct 15 11:05:50 2021 -0500
+
+    Se generaron cruds de idiomas y grados
+
+[33mcommit 18914856de10b3f38a1fd50b1f06ed7fc4162701[m
+Author: hpalma461 <63756085+hpalma461@users.noreply.github.com>
+Date:   Wed Sep 15 13:01:05 2021 -0500
+
+    Se generar nuevo cruds y se instala paquete de idiomas
+
+[33mcommit d325e84b4f7d5138536fd7a7e5cce2dfe15e9c22[m
+Author: hpalma461 <63756085+hpalma461@users.noreply.github.com>
+Date:   Tue Sep 14 10:52:02 2021 -0500
+
+    Se generar cruds de grados y adscripciones
+
+[33mcommit 0db47afecaae344cdc060780a3a01d230526a196[m
+Author: hpalma461 <63756085+hpalma461@users.noreply.github.com>
+Date:   Mon Sep 13 10:07:05 2021 -0500
+
+    Se agrega botones al menu y se hacen pruebas con el crud cat1adscripciones
+
+[33mcommit 6baa0498f5fd07c2f5850c6e70f5efc12cdd7794[m[33m ([m[1;33mtag: 1.0.0[m[33m, [m[1;32mgenerarCruds[m[33m)[m
+Author: hpalma461 <63756085+hpalma461@users.noreply.github.com>
+Date:   Sat Sep 11 19:52:20 2021 -0500
+
+    Version Estable con post y sistema de toles

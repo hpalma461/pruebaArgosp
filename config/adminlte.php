@@ -103,11 +103,11 @@ return [
     */
 
     'classes_auth_card' => '',
-    'classes_auth_header' => 'bg-gradient-info',
+    'classes_auth_header' => 'bg-gradient-warning',
     'classes_auth_body' => '',
     'classes_auth_footer' => 'd-none',
-    'classes_auth_icon' => 'fa-lg text-info',
-    'classes_auth_btn' => 'btn-flat btn-primary',
+    'classes_auth_icon' => 'fa-lg text-warning',
+    'classes_auth_btn' => 'btn-flat btn-warning',
 
     /*
     |--------------------------------------------------------------------------
@@ -254,7 +254,7 @@ return [
         ],
         [
             'text'        => 'Relacion de Personal',
-            'url'         => '#',            
+            'url'         => 'relacionPersonal',            
             'icon'        => 'fas fa-chalkboard-teacher',            
             //'can' => 'admin.home'
         ],

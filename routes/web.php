@@ -28,3 +28,7 @@ Route::view('catalogos.idiomas', 'livewire.catalogos.idiomas.index')->middleware
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+route::get('relacionPersonal', function () {
+    return view('relacionPersonal');
+});
